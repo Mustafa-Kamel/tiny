@@ -102,11 +102,11 @@
                 {{ csrf_field() }}
                 <label for="url" class="form-label">Enter your url here and click shorten</label>
                 <input type="text" name="url" id="url" class="input-field" autofocus required @if(session('url')) value ='{{ session('url') }}' @endif>
-                <button type="submit" class="submit">Shorten</button>
+                <button type="submit" class="submit">Tinify</button>
             </form>
 
-            @if(session('result'))
-                <div class="msg">{{ session('result') }}</div>
+            @if(session('res'))
+                <div class="msg">{{ session('res') }}</div>
             @endif
 
             @if($errors->any())
