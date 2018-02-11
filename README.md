@@ -1,2 +1,2 @@
 # tiny.ar
-URL shortner using laravel mini project
+URL shortner mini project using laravel
